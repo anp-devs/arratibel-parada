@@ -15,6 +15,7 @@ background-color: green;
 	margin-top: 2.5rem;
 	margin-left: 65%;
 }
+<<<<<<< Updated upstream
 
 .titulo{
 	color: #006F86;
@@ -26,3 +27,7 @@ background-color: green;
   margin-right: auto;
   width: 50%;
 }
+=======
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+>>>>>>> Stashed changes
