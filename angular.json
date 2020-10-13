@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "arratibel-parada"
+    }
+  },
+  "defaultProject": "arratibel-parada",
+  "cli": {
+    "analytics": false
+  }
 }
