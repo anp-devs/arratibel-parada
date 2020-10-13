@@ -1,33 +1,24 @@
-.cabecera{
-height: 100px; 
-width: 100%; 
-background-color: green;
+.cabecera {
+    height: 100px;
+    width: 100%;
+    background-color: green;
 }
 
-.btncabecera{
-	background-color: #006F86;
-	margin-top: 2.5rem;
-	margin-left: 5%;
+.btncabecera {
+    background-color: #006F86;
+    margin-top: 2.5rem;
+    margin-left: 5%;
 }
 
-.txtcabecera{
-	background-color: #006F86;
-	margin-top: 2.5rem;
-	margin-left: 65%;
-}
-<<<<<<< Updated upstream
-
-.titulo{
-	color: #006F86;
+.txtcabecera {
+    background-color: #006F86;
+    margin-top: 2.5rem;
+    margin-left: 65%;
 }
 
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-=======
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
->>>>>>> Stashed changes
