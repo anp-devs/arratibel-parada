@@ -1,0 +1,17 @@
+.cabecera{
+height: 100px; 
+width: 100%; 
+background-color: green
+}
+
+.btncabecera{
+	background-color: #006F86;
+	margin-top: 2.5rem;
+	margin-left: 5%;
+}
+
+.txtcabecera{
+	background-color: #006F86;
+	margin-top: 2.5rem;
+	margin-left: 65%;
+}
