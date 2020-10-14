@@ -1,17 +1,32 @@
+.sidenav * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidenav .mat-list-item {
+    background-color: lightgray;
+    border: 1px solid darkgray;
+}
+
+.sidenav .mat-list-item:hover {
+    background-color: lightcyan;
+    border: 1px solid darkgray;
+}
+
 .sidenav-container {
     height: 100%;
 }
 
 .sidenav {
-    width: 200px;
+    width: 250px;
 }
 
 .sidenav .mat-toolbar {
+    padding: 3px;
     background: inherit;
 }
 
-.mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.sidenav-article {
+    margin: 100px;
+    padding: 3px;
 }

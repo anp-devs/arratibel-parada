@@ -1,19 +1,31 @@
 <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [mode]="(isHandset$ | async) ? 'over' : 'side'" disableClose [opened]="(isHandset$ | async) === false">
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
-            <a mat-list-item href="/home">Link 1</a>
-            <a mat-list-item href="#">Link 2</a>
-            <a mat-list-item href="#">Link 3</a>
+            <a mat-list-item href="/home">Home</a>
+            <a mat-list-item href="/servicio">Servicio</a>
+            <a mat-list-item href="/portafolio">Portafolio</a>
+            <a mat-list-item href="/partners">Partners</a>
+            <a mat-list-item href="/contacto">Contacto</a>
+            <a mat-list-item href="#">Juegos</a>
         </mat-nav-list>
+        <hr>
+        <div class="sidenav-article">
+            <h3>¡Estámos reclutando!</h3>
+            <p>Sientete libre de ser parte de nuestro gran equipo, en esta pagina podrás encontrar todo acerca de nosotros, que hacemos y como actuamos. Si estás conforme con nuestra empresa busque más información en la sección de "<a href="/contacto">Contacto</a>".</p>
+        </div>
+        <hr>
+        <div class="sidenav-article">
+            <h3>¡Noticias!</h3>
+            <p>Estaremos haciendo una escurcion a africa junto con el equipo de AnimalPlanet sobre la caza ilegal de rinoserontes, estarémos recolectando información para dar operativos de rescate y protección de fauna.</p>
+        </div>
+        <hr>
+        <form action="" method="post">
+            <p>Boletín informativo: </p><input type="email" name="" id=""><button>Enviar</button>
+        </form>
     </mat-sidenav>
     <mat-sidenav-content>
-        <mat-toolbar color="primary">
-            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-            <span>arratibel-parada</span>
-        </mat-toolbar>
-        <!-- Add Content Here -->
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
