@@ -1,31 +1,89 @@
 <mat-sidenav-container class="sidenav-container">
 
+    <!--INICIO DE NAVEGADOR LATERAL-->
     <mat-sidenav #drawer class="sidenav" fixedInViewport [mode]="(isHandset$ | async) ? 'over' : 'side'" disableClose [opened]="(isHandset$ | async) === false">
-        <mat-toolbar>Menu</mat-toolbar>
+
+        <!--LOGO-->
+        <div class="logo"><img src="assets/zebra-logo-large.png" width="100px" height="100px"></div>
+
+        <!--LISTA DE ITEMS-->
         <mat-nav-list>
             <a mat-list-item href="/home">Home</a>
-            <a mat-list-item href="/servicio">Servicio</a>
             <a mat-list-item href="/portafolio">Portafolio</a>
+            <a mat-list-item href="/servicio">Servicio</a>
             <a mat-list-item href="/partners">Partners</a>
             <a mat-list-item href="/contacto">Contacto</a>
             <a mat-list-item href="#">Juegos</a>
         </mat-nav-list>
-        <hr>
+
+        <!--ARTICULOS DEL NAVEGADOR LATERAL-->
         <div class="sidenav-article">
             <h3>¡Estámos reclutando!</h3>
             <p>Sientete libre de ser parte de nuestro gran equipo, en esta pagina podrás encontrar todo acerca de nosotros, que hacemos y como actuamos. Si estás conforme con nuestra empresa busque más información en la sección de "<a href="/contacto">Contacto</a>".</p>
         </div>
-        <hr>
         <div class="sidenav-article">
-            <h3>¡Noticias!</h3>
-            <p>Estaremos haciendo una escurcion a africa junto con el equipo de AnimalPlanet sobre la caza ilegal de rinoserontes, estarémos recolectando información para dar operativos de rescate y protección de fauna.</p>
+            <h3>Noticias</h3>
+            <p>
+                La Organización de Rescate y Conservación Ambiental, solicita ayuda a quienes puedan tener información sobre el autor de este horroroso crimen. La imagen de un zorro culpeo colgado en una cerca esta causando un incendio "
+                <a href="https://orcachile.org/ofrecen-recompensa-por-crimen-de-zorro/" target="_blank">Ver más</a>
+            </p>
         </div>
-        <hr>
-        <form action="" method="post">
-            <p>Boletín informativo: </p><input type="email" name="" id=""><button>Enviar</button>
-        </form>
+        <div class="sidenav-article">
+            <form action="" method="post">
+                <p>Boletín informativo: </p><input type="email" name="" id=""><button>Enviar</button>
+            </form>
+        </div>
+
     </mat-sidenav>
+
+    <!--CONTENIDO ESTATICO DE LA PAGINA-->
     <mat-sidenav-content>
+
+        <!--BARRA SUPEIROR-->
+        <div id="bar">
+            <div class="alert">¡Llame ya! 8822 9999 200</div>
+
+            <div class="search">
+                <button>Buscar</button>
+                <input type="search" name="" id="">
+            </div>
+        </div>
+        <div id="sub-bar">
+        </div>
+        <img src="assets/zebrabanner.jpg" height="200" width="100%">
+        <div class="separator"></div>
+
+        <!--CONTENIDO DE PAGINAS-->
         <router-outlet></router-outlet>
+
+        <!--FOOTER-->
+        <div class="separator"></div>
+        <footer>
+            <div class="footer-menu">
+                <ul>
+                    <a href="/home">
+                        <li>Home</li>
+                    </a>
+                    <a href="/portafolio">
+                        <li>Portafolio</li>
+                    </a>
+                    <a href="/servicio">
+                        <li>Servicio</li>
+                    </a>
+                    <a href="/partners">
+                        <li>Partners</li>
+                    </a>
+                    <a href="/contacto">
+                        <li>Contacto</li>
+                    </a>
+                    <a href="/#">
+                        <li>Juegos</li>
+                    </a>
+                </ul>
+                <h5 class="cr">Todos los derechos reservados ONG Zebra 2020</h5>
+            </div>
+        </footer>
+
     </mat-sidenav-content>
+
 </mat-sidenav-container>
