@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.noti-grid-container {
+    width: 655px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px;
+    grid-gap: 20px;
+}
+
+.noti-grid-container .img {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    align-content: center;
+}
+
+.noti-grid-container .texto {
+    vertical-align: middle;
+}
+
+a {
+    display: contents;
+    text-decoration: none;
+    color: black;
+}
+
+.noticia {
+    display: contents;
+}
+
+.noticia h3 {
+    background-color: peachpuff;
+}
+
+.noticia:hover {
+    color: blue;
+    border: 3px solid gray;
+}

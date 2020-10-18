@@ -1,7 +1,5 @@
-.article {
-    padding: 20px;
-}
-
-.container {
-    align-content: center;
+.article img {
+    border: 2px solid black;
+    float: right;
+    display: block;
 }

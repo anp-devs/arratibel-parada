@@ -7,11 +7,12 @@ import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ServicioComponent } from './servicio/servicio.component';
 
 const routes: Routes = [
-{path: 'home', component: HomeComponent},
-{path: 'contacto', component: ContactoComponent},
-{path: 'partners', component: PartnersComponent},
-{path: 'portafolio', component: PortafolioComponent},
-{path: 'servicio', component: ServicioComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {path: 'home', component: HomeComponent},
+  {path: 'contacto', component: ContactoComponent},
+  {path: 'partners', component: PartnersComponent},
+  {path: 'portafolio', component: PortafolioComponent},
+  {path: 'servicio', component: ServicioComponent}
 ];
 
 @NgModule({
