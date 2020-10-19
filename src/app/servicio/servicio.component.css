@@ -1,0 +1,40 @@
+.servicio-grid-container {
+    max-width: 1000px;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-template-rows: 350px;
+    grid-gap: 10px;
+}
+
+.servicios-header {
+    padding-top: 30px;
+    text-align: center;
+    max-width: 1000px;
+    width: 75%;
+    margin: auto;
+}
+
+.servicios-header h1 {
+    background-color: lightcyan;
+}
+
+.servicio-grid-container .contacto h3 {
+    background-color: lightseagreen;
+}
+
+.servicio-grid-container .contacto {
+    background-color: midnightblue;
+    color: white
+}
+
+.servicio-grid-container .contacto p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.servicio-grid-container .contacto button {
+    background-color: orangered;
+}
